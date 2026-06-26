@@ -1,0 +1,101 @@
+.review-section {
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+  padding: 100px 6%;
+  color: white;
+}
+
+/* CONTAINER */
+.review-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TAG */
+.review-tag {
+  color: #d4af37;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* CARD */
+.review-card {
+  position: relative;
+  padding: 60px;
+  border: 1px solid rgba(212,175,55,0.25);
+  border-radius: 20px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+}
+
+/* QUOTE */
+.quote {
+  font-size: 60px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.review-text {
+  font-size: 28px;
+  line-height: 1.6;
+  font-family: serif;
+  margin-bottom: 40px;
+  color: #e5e7eb;
+}
+
+/* USER */
+.review-user strong {
+  display: block;
+  font-size: 16px;
+}
+
+.review-user span {
+  font-size: 14px;
+  color: #a0aec0;
+}
+
+/* ARROW */
+.arrow {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d4af37;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* DIVIDER */
+.divider {
+  margin: 50px 0;
+  height: 1px;
+  background: rgba(212,175,55,0.2);
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* NUMBERS */
+.stats h3 {
+  color: #d4af37;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* HOVER EFFECT */
+.review-card:hover {
+  border-color: rgba(212,175,55,0.6);
+  box-shadow: 0 0 40px rgba(212,175,55,0.15);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}

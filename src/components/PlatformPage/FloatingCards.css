@@ -1,0 +1,78 @@
+.floating-wrap {
+  position: relative;
+  width: 350px;
+  height: 260px;
+  perspective: 1200px;
+}
+
+/* ✅ BASE CARD */
+.card {
+  position: absolute;
+  width: 100%;
+  height: 140px;
+
+  border-radius: 18px;
+  padding: 16px;
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+
+  transition: 0.3s;
+}
+
+/* ✅ CONTENT */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: white;
+}
+
+/* ✅ LAYERS */
+.card.top {
+  top: 0;
+  transform: rotateX(8deg) rotateY(-6deg);
+  animation: float1 6s ease-in-out infinite;
+}
+
+.card.middle {
+  top: 60px;
+  transform: rotateX(6deg) rotateY(-3deg);
+  opacity: 0.8;
+  animation: float2 6s ease-in-out infinite;
+}
+
+.card.bottom {
+  top: 120px;
+  transform: rotateX(4deg);
+  opacity: 0.6;
+  animation: float3 6s ease-in-out infinite;
+}
+
+/* ✅ FAKE CONTENT */
+.bar {
+  height: 8px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #d4af37, transparent);
+}
+
+/* ✅ FLOATING ANIMATION */
+@keyframes float1 {
+  0%,100% { transform: translateY(0) rotateX(8deg) rotateY(-6deg); }
+  50% { transform: translateY(-12px) rotateX(8deg) rotateY(-6deg); }
+}
+
+@keyframes float2 {
+  0%,100% { transform: translateY(0) rotateX(6deg) rotateY(-3deg); }
+  50% { transform: translateY(-8px) rotateX(6deg) rotateY(-3deg); }
+}
+
+@keyframes float3 {
+  0%,100% { transform: translateY(0) rotateX(4deg); }
+  50% { transform: translateY(-6px) rotateX(4deg); }
+}

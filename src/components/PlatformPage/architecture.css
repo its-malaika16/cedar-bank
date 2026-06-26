@@ -1,0 +1,149 @@
+.architecture {
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+  padding: 120px 6%;
+  color: white;
+}
+
+/* ✅ HEADER */
+.architecture-header {
+  max-width: 850px;
+  margin-bottom: 60px;
+}
+
+.tag {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #d4af37;
+}
+
+.architecture-header h2 {
+  font-size: 58px;
+  font-family: Georgia, serif;
+  line-height: 1.2;
+  margin: 20px 0;
+
+  color: #e5e7eb;
+}
+
+.architecture-header span {
+  color: #d4af37;
+  font-style: italic;
+}
+
+.architecture-header p {
+  color: #b7c1bd;
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+/* ✅ GRID */
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ✅ CARD */
+.arch-card {
+  border-radius: 20px;
+  padding: 30px;
+
+  border: 1px solid rgba(212,175,55,0.2);
+  background: rgba(0,0,0,0.25);
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  transition: all 0.4s ease;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* stagger animation */
+.arch-card:nth-child(1){animation-delay:.1s;}
+.arch-card:nth-child(2){animation-delay:.3s;}
+.arch-card:nth-child(3){animation-delay:.5s;}
+
+/* ✅ ICON */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(212,175,55,0.35);
+  color: #d4af37;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.icon-box svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+/* ✅ TEXT */
+.arch-card h4 {
+  color: #d4af37;
+  margin: 6px 0 4px;
+}
+
+.arch-card p {
+  color: #b7c1bd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ✅ HOVER */
+.arch-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(212,175,55,0.6);
+  box-shadow:
+    0 10px 40px rgba(212,175,55,0.15),
+    inset 0 0 20px rgba(212,175,55,0.05);
+}
+
+.arch-card:hover .icon-box {
+  transform: scale(1.1) rotate(6deg);
+  box-shadow: 0 0 20px rgba(212,175,55,0.25);
+}
+
+/* ✅ ANIMATION */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 1024px) {
+  .architecture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .architecture-header h2 {
+    font-size: 36px;
+  }
+
+  .architecture-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,27 @@
+import "./feature-hero.css";
+
+export default function FeatureHero() {
+  return (
+    <section className="platform-hero">
+      <div className="container">
+
+      <div className="hero-content">
+
+        {/* TOP TAG */}
+        <span className="platform-hero-tag">APP FEATURES</span>
+
+        {/* HEADING */}
+        <h1 className="hero-title">
+          All-in-One <span>Financial</span> Control
+        </h1>
+
+        {/* TEXT */}
+        <p className="hero-desc">
+          Manage accounts, send payments, handle payroll, and monitor activity without switching between tools or platforms
+        </p>
+
+      </div>
+</div>
+    </section>
+  );
+}

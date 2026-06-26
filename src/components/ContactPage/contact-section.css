@@ -1,0 +1,173 @@
+.contact-section {
+  padding: 120px 6%;
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+}
+
+/* ✅ LAYOUT */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* ✅ LEFT */
+.contact-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INFO CARD */
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 20px;
+  border-radius: 16px;
+
+  border: 1px solid rgba(212,175,55,0.2);
+  background: rgba(0,0,0,0.25);
+
+  backdrop-filter: blur(10px);
+}
+
+/* ICON */
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #d4af37;
+  border: 1px solid rgba(212,175,55,0.4);
+}
+
+.icon-box svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+}
+
+/* TEXT */
+.label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #d4af37;
+}
+
+.info-card p {
+  color: white;
+  font-size: 14px;
+}
+
+/* SUPPORT BOX */
+.support-box {
+  padding: 22px;
+  border-radius: 16px;
+
+  border: 1px solid rgba(212,175,55,0.2);
+  background: rgba(0,0,0,0.25);
+}
+
+.support-box h4 {
+  color: white;
+}
+
+.support-box p{
+  color: rgb(231, 227, 227);
+}
+
+.support-box span {
+  color: #d4af37;
+}
+
+/* ✅ RIGHT FORM */
+.contact-right {
+  width: 50%;
+}
+
+.form {
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(212,175,55,0.2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+/* INPUTS */
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #1b3731;
+  color: white;
+
+  outline: none;
+}
+
+/* TEXTAREA */
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* BUTTON */
+button {
+  padding: 16px;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #f6c65b, #d4af37);
+  color: black;
+  border: none;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 10px 25px rgba(212,175,55,0.4);
+}
+
+/* SMALL TEXT */
+small {
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}

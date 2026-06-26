@@ -1,0 +1,196 @@
+:root {
+  --gold: #ffd043;
+}
+
+/* FIXES */
+.carousel-wrapper,
+.lovable-card {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.carousel-wrapper {
+  position: relative;
+  height: 560px;
+  cursor: grab;
+  touch-action: pan-y;
+}
+.carousel-wrapper:active {
+  cursor: grabbing;
+}
+
+/* SECTION */
+.banking-section {
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.banking-title {
+  font-size: 48px;
+}
+.title-highlight {
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* CARD */
+.lovable-card {
+  position: absolute;
+  top: 40px;
+  width: 320px;
+  height: 440px;
+}
+
+.card-inner {
+  height: 100%;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ACTIVE CARD */
+.lovable-card.active .card-inner {
+  background: linear-gradient(135deg,#1f3530,#26443e,#1a2e2a);
+  border: 1px solid rgba(255,208,67,0.6);
+  box-shadow:
+    0 25px 80px rgba(255,208,67,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* GLOW */
+.lovable-card.active::before {
+  content: "";
+  position: absolute;
+  inset: -60px;
+  background: radial-gradient(circle, rgba(255,208,67,0.2), transparent 70%);
+  filter: blur(50px);
+  z-index: -1;
+}
+
+/* SHIMMER FIXED */
+.lovable-card.active:hover .card-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+
+  background: conic-gradient(
+    transparent,
+    rgba(255,208,67,0.15),
+    transparent 30%
+  );
+
+  animation: spin 6s linear infinite;
+}
+
+/* ICON */
+.cap-icon-box {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+
+  border: 1px solid rgba(255,208,67,0.4);
+  background: rgba(255,208,67,0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--gold);
+}
+
+.cap-icon-box svg {
+  width: 28px;
+  height: 28px;
+}
+
+.lovable-card.active:hover .cap-icon-box {
+  transform: translateX(-50%) rotate(360deg) scale(1.1);
+  background: var(--gold);
+  color: #071912;
+  box-shadow: 0 0 40px rgba(255,208,67,0.7);
+}
+
+/* TEXT */
+.lovable-card h3 {
+  margin-top: 120px;
+}
+
+.lovable-card p {
+  opacity: 0;
+}
+.lovable-card.active p {
+  opacity: 1;
+}
+
+/* DIVIDER */
+.line-divider {
+  display: block;
+  width: 40px;
+  height: 1px;
+  margin: 10px auto;
+}
+.lovable-card.active .line-divider {
+  width: 80px;
+  background: var(--gold);
+}
+
+/* CORNERS */
+.corner {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+}
+.lovable-card.active .corner {
+  opacity: 1;
+}
+
+.corner.top {
+  top: 0;
+  right: 0;
+  border-top: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
+}
+.corner.bottom {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid var(--gold);
+  border-left: 2px solid var(--gold);
+}
+
+/* DOTS */
+.carousel-pagination {
+  margin-top: 40px;
+}
+.pagination-dot {
+  width: 8px;
+  height: 8px;
+  background: #555;
+  border-radius: 50%;
+  margin: 5px;
+}
+.pagination-dot.active {
+  background: var(--gold);
+}
+
+/* ANIMATION */
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,263 @@
+.wallet-section {
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+  padding: 120px 6%;
+}
+
+/* CONTAINER */
+.wallet-container {
+  border: 1px solid rgba(212,175,55,0.2);
+  border-radius: 20px;
+  padding: 60px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* LEFT SIDE */
+.wallet-left {
+  width: 45%;
+}
+
+.wallet-title {
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ✅ CIRCLE */
+.balance-circle {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+
+  margin: auto;
+  margin-bottom: 40px;
+
+  background:
+    conic-gradient(#d4af37 70%, rgba(212,175,55,0.15) 30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-inner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #071912;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TEXT */
+.circle-inner .label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #b7c1bd;
+}
+
+.circle-inner h2 {
+  color: #d4af37;
+  margin-top: 10px;
+}
+
+/* STATS */
+.wallet-stats {
+  text-align: center;
+}
+
+.wallet-stats p {
+  color: #cbd5e0;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet-stats span {
+  color: #d4af37;
+}
+
+/* RIGHT SIDE */
+.wallet-right {
+  width: 45%;
+  border: 1px solid rgba(212,175,55,0.2);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* HEADER */
+.payroll-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.payroll-header h4 {
+  color: white;
+}
+
+.payroll-header span {
+  color: #b7c1bd;
+  font-size: 13px;
+}
+
+/* LIST */
+.payroll-list .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(212,175,55,0.15);
+}
+
+.payroll-list .item:last-child {
+  border-bottom: none;
+}
+
+.payroll-list strong {
+  color: white;
+}
+
+.payroll-list p {
+  font-size: 13px;
+  color: #b7c1bd;
+}
+
+.payroll-list span {
+  color: #d4af37;
+}
+/* ✅ TABLET */
+@media (max-width: 1024px) {
+
+  .wallet-container {
+    flex-direction: column;     /* ✅ stack */
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  .wallet-left,
+  .wallet-right {
+    width: 100%;
+  }
+
+  .wallet-right {
+    padding: 25px;
+  }
+
+  /* circle smaller */
+  .balance-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .circle-inner {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+
+  .wallet-section {
+    padding: 80px 20px;
+  }
+
+  .wallet-container {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  /* ✅ CENTER TEXT */
+  .wallet-left {
+    text-align: center;
+  }
+
+  .wallet-title {
+    font-size: 14px;
+  }
+
+  /* ✅ smaller circle */
+  .balance-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle-inner {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle-inner h2 {
+    font-size: 18px;
+  }
+
+  /* ✅ stack stats nicely */
+  .wallet-stats p {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+  }
+
+  /* ✅ RIGHT SIDE CARD */
+  .wallet-right {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  /* ✅ HEADER */
+  .payroll-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .payroll-header span {
+    font-size: 12px;
+  }
+
+  /* ✅ ITEMS */
+  .payroll-list .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .payroll-list span {
+    align-self: flex-end;
+  }
+
+  .payroll-list strong {
+    font-size: 14px;
+  }
+
+  .payroll-list p {
+    font-size: 12px;
+  }
+}
+
+
+/* ✅ SMALL MOBILE (extra polish) */
+@media (max-width: 480px) {
+
+  .balance-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .circle-inner {
+    width: 130px;
+    height: 130px;
+  }
+
+  .circle-inner h2 {
+    font-size: 16px;
+  }
+}

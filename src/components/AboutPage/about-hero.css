@@ -1,0 +1,50 @@
+.platform-hero {
+  background: radial-gradient(
+      circle at 80% 0%,
+      rgba(212, 175, 55, 0.15),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #0b2f2a, #071912);
+
+  padding: 140px 8%;
+  color: white;
+}
+
+/* CONTENT */
+.hero-content {
+  max-width: 700px;
+}
+
+/* TAG */
+.platform-hero-tag {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #d4af37;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* ✅ TITLE */
+.hero-title {
+  font-size: 70px;
+  line-height: 1.1;
+  font-family: "Georgia", serif;
+  font-weight: 400;
+
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+/* GOLD WORD */
+.hero-title span {
+  color: #d4af37;
+  font-style: italic;
+}
+
+/* DESCRIPTION */
+.hero-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #b7c1bd;
+  max-width: 520px;
+}

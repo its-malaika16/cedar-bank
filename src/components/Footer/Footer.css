@@ -1,0 +1,113 @@
+.footer {
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+  color: #e5e7eb;
+}
+
+/* ✅ MAIN CONTAINER */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  padding: 80px 6%;
+}
+
+/* ✅ LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-box img {
+  width: 40px;
+}
+
+.logo-text span {
+  display: block;
+  font-size: 12px;
+}
+
+.logo-text strong {
+  color: #d4af37;
+}
+
+/* ✅ DESCRIPTION */
+.footer-desc {
+  font-size: 14px;
+  color: #b7c1bd;
+  line-height: 1.6;
+}
+
+/* ✅ HEADINGS */
+.footer-col h4 {
+  color: #d4af37;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+/* ✅ LINKS */
+.footer-col a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #cbd5e0;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #d4af37;
+}
+
+/* ✅ CITY NAME */
+.cityname {
+  font-weight: bold;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* ✅ CONTACT ROW */
+.contact-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* ✅ ICON */
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  color: #d4af37;
+  margin-top: 3px;
+}
+
+.contact-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+/* ✅ TEXT */
+.contact-row p {
+  font-size: 14px;
+  color: #cbd5e0;
+  line-height: 1.4;
+}
+
+/* ✅ BOTTOM */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(212,175,55,0.15);
+  padding: 20px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

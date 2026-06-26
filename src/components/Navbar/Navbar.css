@@ -1,0 +1,161 @@
+/* ✅ NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 6%;
+
+  background: rgba(7, 25, 18, 0.85);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(212,175,55,0.12);
+}
+
+/* ========================= */
+/* ✅ LOGO SECTION */
+/* ========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+/* ICON BOX */
+.logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+
+  background: #0b2f2a;
+  border: 1px solid rgba(212,175,55,0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* TEXT */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+/* TOP LINE */
+.logo-text .top {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #cbd5e0;
+  margin: 0;
+}
+
+/* BOTTOM LINE */
+.logo-text .bottom {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d4af37;
+  margin: 0;
+}
+
+/* OPTIONAL HOVER */
+.logo:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* ========================= */
+/* ✅ NAV LINKS */
+/* ========================= */
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cbd5e0;
+  font-size: 14px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* ✅ HOVER */
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+/* ✅ ACTIVE LINK */
+.nav-links a.active {
+  color: #d4af37;
+}
+
+/* ✅ ACTIVE UNDERLINE */
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #d4af37;
+}
+
+/* ========================= */
+/* ✅ CTA BUTTON */
+/* ========================= */
+
+.nav-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #f6c65b, #d4af37);
+  color: #071912;
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212,175,55,0.4);
+}
+
+/* ========================= */
+/* ✅ MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .logo-text .top {
+    font-size: 10px;
+  }
+
+  .logo-text .bottom {
+    font-size: 12px;
+  }
+}

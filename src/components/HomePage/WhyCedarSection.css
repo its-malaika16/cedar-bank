@@ -1,0 +1,113 @@
+.why-section {
+  background: linear-gradient(135deg, #0b2f2a, #133d36);
+  color: white;
+  padding: 100px 6%;
+}
+
+/* GRID */
+.why-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ✅ CARD */
+.why-card {
+  border: 1px solid rgba(201,162,39,0.25);
+  border-radius: 20px;
+  padding: 28px;                  /* ✅ strong internal spacing */
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  overflow: hidden;              /* ✅ prevents icon overflow */
+}
+
+/* ✅ HEADER ROW */
+.card-header {
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+  margin-bottom: 14px;
+
+  width: 100%;
+}
+
+/* ✅ ICON (NOW PERFECTLY INSIDE) */
+.icon-box {
+  
+position: static !important;
+  margin: 10 !important;
+
+  width: 35px;
+  height: 35px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+  border: 1px solid rgba(201,162,39,0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #d6b44c;
+  background: rgba(201,162,39,0.06);
+}
+
+/* SVG SIZE */
+.icon-box svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ✅ TITLE */
+.why-card h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #f1d277;
+
+  flex: 1;                     /* ✅ ensures proper layout */
+}
+
+/* ✅ TEXT */
+.why-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #b7c1bd;
+  line-height: 1.6;
+}
+
+/* ✅ HOVER */
+.why-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201,162,39,0.7);
+
+  box-shadow:
+    0 10px 40px rgba(201,162,39,0.12),
+    inset 0 0 20px rgba(201,162,39,0.08);
+}
+
+/* ✅ TABLET */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+  .why-section {
+    padding: 60px 20px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}

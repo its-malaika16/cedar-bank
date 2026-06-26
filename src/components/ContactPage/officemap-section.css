@@ -1,0 +1,108 @@
+.offices {
+  padding: 120px 6%;
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+  color: white;
+}
+
+/* ✅ HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header span {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #d4af37;
+}
+
+.header h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  font-family: Georgia, serif;
+}
+
+.gold {
+  color: #d4af37;
+  font-style: italic;
+}
+
+/* ✅ GRID */
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* ✅ CARD */
+.office-card {
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid rgba(212,175,55,0.2);
+  background: rgba(0,0,0,0.25);
+
+  transition: 0.3s;
+}
+
+/* ✅ MAP */
+.map-wrap {
+  position: relative;
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 180px;
+  border: none;
+}
+
+/* BUTTON */
+.map-wrap a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background: white;
+  color: black;
+
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  text-decoration: none;
+}
+
+/* ✅ INFO */
+.office-info {
+  padding: 18px;
+  text-align: center;
+}
+
+.office-info h4 {
+  font-size: 18px;
+}
+
+.office-info p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #b7c1bd;
+}
+
+/* ✅ HOVER */
+.office-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 40px rgba(212,175,55,0.15);
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 1024px) {
+  .offices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .offices-grid {
+    grid-template-columns: 1fr;
+  }
+}
