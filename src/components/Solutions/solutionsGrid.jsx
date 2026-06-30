@@ -1,4 +1,4 @@
-import "./SolutionsGrid.css";
+import "./solutionsGrid.css";
 
 export default function SolutionsGrid() {
   return (

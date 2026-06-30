@@ -1,4 +1,4 @@
-import "./Payment-types.css";
+import "./payment-types.css";
 
 export default function PaymentTypes() {
   return (
