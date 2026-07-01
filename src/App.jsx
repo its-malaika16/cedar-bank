@@ -10,11 +10,14 @@ import Platform from './pages/Platform';
 import Solutions from './pages/Solutions';
 import Footer from './components/Footer/Footer';
 
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 function App() {
   return (
     <Router>
+         <ScrollToTop />
       { <Navbar /> }
 
       <Routes>

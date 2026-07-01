@@ -1,50 +1,194 @@
+/* ========================= */
+/* PLATFORM HERO */
+/* ========================= */
+
 .platform-hero {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 80% 0%,
       rgba(212, 175, 55, 0.15),
       transparent 50%
     ),
-    linear-gradient(135deg, #0b2f2a, #071912);
+    linear-gradient(
+      135deg,
+      #0b2f2a,
+      #071912
+    );
 
-  padding: 140px 8%;
+  padding: 180px 8% 100px !important;
   color: white;
 }
 
+/* ========================= */
 /* CONTENT */
+/* ========================= */
+
 .hero-content {
   max-width: 800px;
 }
 
 /* TAG */
+
 .platform-hero-tag {
+  display: block;
+
+  margin-bottom: 20px;
+
   font-size: 12px;
   letter-spacing: 3px;
+
   color: #d4af37;
-  margin-bottom: 20px;
-  display: block;
 }
 
-/* ✅ TITLE */
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
 .hero-title {
   font-size: 70px;
   line-height: 1.1;
-  font-family: "Georgia", serif;
+
+  font-family: Georgia, serif;
   font-weight: 400;
 
   color: #e5e7eb;
+
   margin-bottom: 30px;
 }
 
-/* GOLD WORD */
 .hero-title span {
   color: #d4af37;
   font-style: italic;
 }
 
+/* ========================= */
 /* DESCRIPTION */
+/* ========================= */
+
 .hero-desc {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #b7c1bd;
   max-width: 520px;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: #b7c1bd;
+}
+
+/* ========================= */
+/* LARGE DESKTOP */
+/* ========================= */
+
+@media (max-width: 1400px) {
+  .hero-title {
+    font-size: 62px;
+  }
+}
+
+/* ========================= */
+/* LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .platform-hero {
+    padding: 120px 6%;
+  }
+
+  .hero-title {
+    font-size: 54px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .platform-hero {
+    padding: 110px 40px 80px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 46px;
+  }
+
+  .hero-desc {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .platform-hero {
+    padding: 100px 20px 60px;
+  }
+
+  .platform-hero-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .platform-hero {
+    padding: 90px 16px 50px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .platform-hero-tag {
+    font-size: 10px;
+  }
+}
+
+/* ========================= */
+/* EXTRA SMALL DEVICES */
+/* ========================= */
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-desc {
+    font-size: 13px;
+  }
+
+  .platform-hero-tag {
+    letter-spacing: 1.5px;
+  }
 }

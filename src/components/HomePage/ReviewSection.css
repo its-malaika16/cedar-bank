@@ -12,21 +12,35 @@
 
 /* TAG */
 .review-tag {
+  display: block;
+
   color: #d4af37;
   letter-spacing: 3px;
   font-size: 12px;
+
   margin-bottom: 30px;
-  display: block;
 }
 
 /* CARD */
 .review-card {
   position: relative;
+
   padding: 60px;
-  border: 1px solid rgba(212,175,55,0.25);
+
   border-radius: 20px;
-  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.review-card:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+  transform: translateY(-4px);
 }
 
 /* QUOTE */
@@ -34,6 +48,7 @@
   font-size: 60px;
   color: #d4af37;
   margin-bottom: 20px;
+  line-height: 1;
 }
 
 /* TEXT */
@@ -41,14 +56,19 @@
   font-size: 28px;
   line-height: 1.6;
   font-family: serif;
-  margin-bottom: 40px;
+
   color: #e5e7eb;
+
+  margin-bottom: 40px;
+
+  max-width: 900px;
 }
 
 /* USER */
 .review-user strong {
   display: block;
   font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .review-user span {
@@ -59,25 +79,36 @@
 /* ARROW */
 .arrow {
   position: absolute;
+
   right: 40px;
   top: 50%;
+
   transform: translateY(-50%);
+
   color: #d4af37;
   font-size: 20px;
+
   cursor: pointer;
 }
 
 /* DIVIDER */
 .divider {
-  margin: 50px 0;
   height: 1px;
-  background: rgba(212,175,55,0.2);
+  margin: 50px 0;
+
+  background: rgba(212, 175, 55, 0.2);
 }
 
 /* STATS */
 .stats {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+}
+
+/* STAT ITEM */
+.stats > div {
+  flex: 1;
 }
 
 /* NUMBERS */
@@ -90,12 +121,154 @@
 .stats p {
   font-size: 13px;
   color: #9ca3af;
+  line-height: 1.6;
 }
 
-/* HOVER EFFECT */
-.review-card:hover {
-  border-color: rgba(212,175,55,0.6);
-  box-shadow: 0 0 40px rgba(212,175,55,0.15);
-  transform: translateY(-4px);
-  transition: all 0.3s ease;
+/* ========================= */
+/* LARGE LAPTOPS */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .review-text {
+    font-size: 24px;
+  }
+
+  .review-card {
+    padding: 50px;
+  }
+}
+
+/* ========================= */
+/* TABLETS */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .review-section {
+    padding: 80px 5%;
+  }
+
+  .review-card {
+    padding: 40px;
+  }
+
+  .quote {
+    font-size: 50px;
+  }
+
+  .review-text {
+    font-size: 22px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .stats h3 {
+    font-size: 22px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .review-section {
+    padding: 60px 20px;
+  }
+
+  .review-card {
+    padding: 30px 24px;
+  }
+
+  .quote {
+    font-size: 42px;
+  }
+
+  .review-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .arrow {
+    position: static;
+    transform: none;
+
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .divider {
+    margin: 35px 0;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .review-section {
+    padding: 50px 16px;
+  }
+
+  .review-card {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  .review-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .quote {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+
+  .review-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .review-user strong {
+    font-size: 15px;
+  }
+
+  .review-user span {
+    font-size: 13px;
+  }
+
+  .stats h3 {
+    font-size: 20px;
+  }
+
+  .stats p {
+    font-size: 12px;
+  }
+}
+
+/* ========================= */
+/* EXTRA SMALL DEVICES */
+/* ========================= */
+
+@media (max-width: 360px) {
+  .review-text {
+    font-size: 15px;
+  }
+
+  .quote {
+    font-size: 28px;
+  }
+
+  .stats h3 {
+    font-size: 18px;
+  }
 }

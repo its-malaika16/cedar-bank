@@ -1,8 +1,12 @@
-/* ✅ NAVBAR */
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   z-index: 1000;
 
@@ -12,27 +16,28 @@
 
   padding: 18px 6%;
 
-  background: rgba(7, 25, 18, 0.85);
+  background: rgba(7, 25, 18, 0.9);
   backdrop-filter: blur(12px);
 
   border-bottom: 1px solid rgba(212, 175, 55, 0.12);
 }
 
 /* ========================= */
-/* ✅ LOGO SECTION */
+/* LOGO */
 /* ========================= */
 
 .logo {
   display: flex;
   align-items: center;
   gap: 12px;
+
   text-decoration: none;
 }
 
-/* ICON BOX */
 .logo-box {
   width: 44px;
   height: 44px;
+
   border-radius: 10px;
 
   background: #0b2f2a;
@@ -49,41 +54,33 @@
   object-fit: contain;
 }
 
-/* TEXT */
 .logo-text {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
 }
 
-/* TOP LINE */
 .logo-text .top {
+  margin: 0;
   font-size: 12px;
-  letter-spacing: 1px;
   color: #cbd5e0;
-  margin: 0;
+  letter-spacing: 1px;
 }
 
-/* BOTTOM LINE */
 .logo-text .bottom {
-  font-size: 14px;
-  font-weight: 600;
-  color: #d4af37;
   margin: 0;
-}
-
-/* OPTIONAL HOVER */
-.logo:hover {
-  transform: scale(1.02);
-  transition: 0.3s;
+  font-size: 14px;
+  color: #d4af37;
+  font-weight: 600;
 }
 
 /* ========================= */
-/* ✅ NAV LINKS */
+/* LINKS */
 /* ========================= */
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 28px;
 }
 
@@ -91,66 +88,161 @@
   text-decoration: none;
   color: #cbd5e0;
   font-size: 14px;
+
   position: relative;
   transition: 0.3s;
 }
 
-/* ✅ HOVER */
 .nav-links a:hover {
   color: #d4af37;
 }
 
-/* ✅ ACTIVE LINK */
 .nav-links a.active {
   color: #d4af37;
 }
 
-/* ✅ ACTIVE UNDERLINE */
 .nav-links a.active::after {
   content: "";
+
   position: absolute;
   left: 0;
   bottom: -6px;
+
   width: 100%;
   height: 2px;
+
   background: #d4af37;
 }
 
 /* ========================= */
-/* ✅ CTA BUTTON */
+/* BUTTON */
 /* ========================= */
 
 .nav-btn {
   padding: 10px 20px;
   border-radius: 10px;
 
-  background: linear-gradient(135deg, #f6c65b, #d4af37);
-  color: #071912;
+  background: linear-gradient(
+    135deg,
+    #f6c65b,
+    #d4af37
+  );
 
+  color: #071912;
   text-decoration: none;
-  font-weight: 500;
+
+  font-weight: 600;
 
   transition: all 0.3s ease;
 }
 
 .nav-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+
+  box-shadow: 0 6px 20px rgba(
+    212,
+    175,
+    55,
+    0.4
+  );
 }
 
 /* ========================= */
-/* ✅ MOBILE */
+/* HAMBURGER */
+/* ========================= */
+
+.menu-toggle {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  color: white;
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+/* mobile button hidden desktop */
+
+.mobile-btn {
+  display: none;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-btn {
+    padding: 10px 16px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
 /* ========================= */
 
 @media (max-width: 768px) {
 
-  .nav-links {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
     display: none;
   }
 
-  .nav-btn {
-    padding: 8px 14px;
-    font-size: 13px;
+  .nav-links {
+    position: fixed;
+
+    top: 80px;
+    left: -100%;
+
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    background: #071912;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 24px;
+
+    padding-top: 40px;
+
+    transition: 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .mobile-btn {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 12px 22px;
+    border-radius: 10px;
+
+    background: linear-gradient(
+      135deg,
+      #f6c65b,
+      #d4af37
+    );
+
+    color: #071912 !important;
+    font-weight: 600;
   }
 
   .logo-text .top {
@@ -159,5 +251,25 @@
 
   .logo-text .bottom {
     font-size: 12px;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 14px 5%;
+  }
+
+  .logo-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-box img {
+    width: 20px;
+    height: 20px;
   }
 }
