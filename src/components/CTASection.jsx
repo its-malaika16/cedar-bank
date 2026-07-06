@@ -1,4 +1,5 @@
 import "./CTASection.css";
+import { Link } from "react-router-dom";
 
 export default function CtaSection() {
   return (
@@ -28,13 +29,17 @@ export default function CtaSection() {
 
         {/* BUTTONS */}
         <div className="cta-buttons">
-          <button className="primary">
-            Request a demo →
-          </button>
+          <Link to="/contact">
+            <button className="primary">
+              Get in touch →
+            </button>
+          </Link>
 
-          <button className="secondary">
-            Explore the platform
-          </button>
+          <Link to="/features">
+            <button className="secondary">
+              Explore the platform
+            </button>
+          </Link>
         </div>
 
       </div>

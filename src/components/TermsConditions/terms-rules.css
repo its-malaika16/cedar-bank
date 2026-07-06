@@ -1,0 +1,81 @@
+/* ✅ SECTION BACKGROUND */
+.privacy-section {
+  background: linear-gradient(135deg, #0b2f2a, #071912);
+  padding: 100px 6%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ✅ CARD (like your screenshot) */
+.privacy-card {
+  max-width: 900px;
+  width: 100%;
+
+  padding: 50px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(212,175,55,0.15);
+
+  backdrop-filter: blur(20px);
+
+  box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+
+  color: #cbd5e0;
+}
+
+/* ✅ LAST UPDATED */
+.last-updated {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* ✅ HEADINGS */
+.privacy-card h2 {
+  font-size: 28px;
+  color: #e5e7eb;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* ✅ TEXT */
+.privacy-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* ✅ LIST */
+.privacy-card ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-card li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ✅ GOLD HIGHLIGHT */
+.highlight {
+  color: #d4af37;
+  font-weight: 500;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+  .privacy-card {
+    padding: 30px;
+  }
+
+  .privacy-card h2 {
+    font-size: 22px;
+  }
+
+  .privacy-card p,
+  .privacy-card li {
+    font-size: 14px;
+  }
+}

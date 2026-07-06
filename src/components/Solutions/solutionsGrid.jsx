@@ -28,7 +28,7 @@ export default function SolutionsGrid() {
             <span>Compliance-ready templates</span>
           </div>
 
-          <a href="#">Talk to an expert →</a>
+          <a href="/contact">Talk to an expert →</a>
         </div>
 
         {/* CARD 2 */}
@@ -54,7 +54,7 @@ export default function SolutionsGrid() {
             <span>Multi-entity support</span>
           </div>
 
-          <a href="#">Talk to an expert →</a>
+          <a href="/contact">Talk to an expert →</a>
         </div>
 
         {/* CARD 3 */}
@@ -80,7 +80,7 @@ export default function SolutionsGrid() {
             <span>Real-time reconciliation</span>
           </div>
 
-          <a href="#">Talk to an expert →</a>
+          <a href="/contact">Talk to an expert →</a>
         </div>
 
         {/* CARD 4 */}
@@ -108,7 +108,7 @@ export default function SolutionsGrid() {
             <span>Transaction oversight</span>
           </div>
 
-          <a href="#">Talk to an expert →</a>
+          <a href="/contact">Talk to an expert →</a>
         </div>
 
       </div>
