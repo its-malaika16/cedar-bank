@@ -32,7 +32,7 @@ export default function Footer() {
           <h4>Quick Links</h4>
 
           <Link to="/">Home</Link>
-          <Link to="/services">Solutions</Link>
+          <Link to="/solutions">Solutions</Link>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
         </div>
