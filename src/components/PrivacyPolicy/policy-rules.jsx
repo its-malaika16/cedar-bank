@@ -11,74 +11,86 @@ export default function PrivacyPolicy() {
         {/* 1 */}
         <h2>1. Introduction</h2>
         <p>
-          Cedar Capital Payroll ("we", "us", "our") is committed to protecting your privacy.
-          This Privacy Policy explains how we collect, use, store, and safeguard the personal
-          information you share with us through our website cedarpayroll.co.uk and our payroll services.
+          Welcome to Cedar Capital Bank. We ("we", "us", "our") are committed to protecting
+          your privacy and safeguarding your personal information. This Privacy Policy
+          explains how we collect, use, store, and protect the information you provide
+          while using our banking application and related financial services.
         </p>
 
         {/* 2 */}
         <h2>2. Information We Collect</h2>
         <ul>
-          <li>Contact details such as your name, business name, email address, and phone number.</li>
-          <li>Information you provide via our contact form or newsletter signup.</li>
-          <li>Employee payroll data submitted by client businesses for processing.</li>
-          <li>Technical information such as IP address, browser type, and pages visited.</li>
+          <li>Personal information such as your full name, email address, phone number, and residential address.</li>
+          <li>Identity verification documents required for account creation and regulatory compliance.</li>
+          <li>Bank account information, transaction history, and payment details.</li>
+          <li>Device information including IP address, browser type, operating system, and device identifiers.</li>
+          <li>Login activity, security logs, and app usage information.</li>
         </ul>
 
         {/* 3 */}
         <h2>3. How We Use Your Information</h2>
         <ul>
-          <li>To provide and administer our payroll services.</li>
-          <li>To respond to enquiries submitted through our website.</li>
-          <li>To send service updates, newsletters, and relevant communications you have opted in to receive.</li>
-          <li>To comply with HMRC, tax, and legal obligations.</li>
-          <li>To improve our website, services, and customer experience.</li>
+          <li>To create and manage your banking account.</li>
+          <li>To process payments, transfers, deposits, and withdrawals.</li>
+          <li>To verify your identity and prevent fraud or unauthorized access.</li>
+          <li>To provide customer support and respond to your enquiries.</li>
+          <li>To comply with financial regulations and legal obligations.</li>
+          <li>To improve our banking services, mobile application, and customer experience.</li>
         </ul>
 
         {/* 4 */}
         <h2>4. Lawful Basis for Processing</h2>
         <p>
-          We process personal data under the UK GDPR on the basis of contract performance, your consent
-          (e.g. newsletter subscription), our legitimate business interests, and our legal obligations
-          as a payroll provider.
+          We process your personal information in accordance with applicable data
+          protection laws. Processing is necessary for providing banking services,
+          fulfilling contractual obligations, complying with legal and regulatory
+          requirements, protecting against fraud, and where applicable, with your
+          consent.
         </p>
 
         {/* 5 */}
         <h2>5. Data Sharing</h2>
         <p>
-          We do not sell your personal information. We may share data with HMRC, pension providers,
-          and trusted service providers strictly to deliver our services. All third parties are
-          bound by appropriate confidentiality and data-protection obligations.
+          We do not sell your personal information. We may share your data with
+          regulatory authorities, payment networks, identity verification providers,
+          fraud prevention services, and trusted technology partners only when
+          necessary to provide secure banking services or comply with legal obligations.
         </p>
 
         {/* 6 */}
         <h2>6. Data Retention</h2>
         <p>
-          We retain personal data only for as long as necessary to provide our services and to comply
-          with statutory record-keeping requirements (typically a minimum of six years for payroll records).
+          We retain your personal information only for as long as necessary to provide
+          our banking services, maintain your account, resolve disputes, and comply
+          with applicable financial, tax, and regulatory record-keeping requirements.
         </p>
 
         {/* 7 */}
         <h2>7. Your Rights</h2>
         <p>
-          You have the right to access, correct, delete, or restrict the use of your personal data,
-          and the right to data portability and to object to processing. To exercise any of these rights,
-          contact us at <span className="highlight">Support@cedarpayroll.com</span>.
+          Depending on your jurisdiction, you may have the right to access, update,
+          correct, delete, or restrict the processing of your personal information,
+          request data portability, or object to certain processing activities. To
+          exercise your rights, contact us at{" "}
+          <span className="highlight">info@cedarcapitalbank.com</span>.
         </p>
 
         {/* 8 */}
         <h2>8. Security</h2>
         <p>
-          We use appropriate technical and organisational measures to safeguard your data, including
-          encrypted storage, access controls, and secure cloud infrastructure.
+          We implement industry-standard security measures, including encryption,
+          multi-factor authentication, secure servers, access controls, continuous
+          monitoring, and fraud detection systems to protect your information from
+          unauthorized access, disclosure, alteration, or loss.
         </p>
 
         {/* 9 */}
         <h2>9. Contact Us</h2>
         <p>
-          For any privacy-related questions, please contact Cedar Capital Payroll at{" "}
-          <span className="highlight">Support@cedarpayroll.com</span> or{" "}
-          <span className="highlight">+971 50 429 4194</span>.
+          If you have any questions regarding this Privacy Policy or how your personal
+          information is handled, please contact us at{" "}
+          <span className="highlight">info@cedarcapitalbank.com</span> or{" "}
+          <span className="highlight">+44 741 281 8641</span>.
         </p>
 
       </div>

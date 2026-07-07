@@ -1,4 +1,5 @@
 import "./Footer.css";
+import {Link} from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -30,19 +31,19 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Quick Links</h4>
 
-          <a href="/">Home</a>
-          <a href="/services">Services</a>
-          <a href="/about">About Us</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         {/* ✅ COLUMN 3 */}
         <div className="footer-col">
           <h4>Legal</h4>
 
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Terms & Conditions</a>
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/cookies">Cookie Policy</Link>
+          <Link to="/terms">Terms & Conditions</Link>
         </div>
 
         {/* ✅ COLUMN 4 - CONTACT */}

@@ -11,65 +11,99 @@ export default function TermsPolicy() {
         {/* 1 */}
         <h2>1. Introduction</h2>
         <p>
-          These Terms & Conditions ("Terms") govern your access to and use of the website cedarpayroll.co.uk and any payroll services provided by Cedar Capital Payroll. By using our website or engaging our services, you agree to be bound by these Terms.
+          These Terms & Conditions ("Terms") govern your access to and use of the
+          SecureBank mobile application, website, and related banking services. By
+          creating an account or using our services, you agree to comply with and be
+          bound by these Terms.
         </p>
 
         {/* 2 */}
         <h2>2. About Us</h2>
-        <p> Cedar Capital Payroll provides professional payroll services to UK businesses, including PAYE, NIC calculations, payslip generation, P45/P60 production, and pension auto-enrolment support, in line with HMRC guidelines.</p>
+        <p>
+          SecureBank provides digital banking services, including account management,
+          money transfers, bill payments, transaction history, card management,
+          savings features, and other financial services in accordance with
+          applicable banking laws and regulations.
+        </p>
 
         {/* 3 */}
-        <h2>3. Use of the Website</h2>
-       <p> This website is provided for informational purposes. You agree to use it lawfully and not to attempt to disrupt, reverse-engineer, or gain unauthorised access to any part of it.</p>
+        <h2>3. Eligibility & Use of the Application</h2>
+        <p>
+          You must be legally eligible to open and operate a bank account in your
+          jurisdiction. You agree to use the application only for lawful purposes
+          and not attempt to interfere with, reverse-engineer, or gain unauthorized
+          access to our systems or services.
+        </p>
 
         {/* 4 */}
-        <h2>4. Payroll Services</h2>
+        <h2>4. Banking Services</h2>
         <p>
-          Where Cedar Capital Payroll is engaged to provide services, a separate written services agreement will set out the specific scope, fees, deliverables, and responsibilities of each party. These Terms apply in addition to any such agreement.
+          Our banking services allow you to securely manage your accounts, transfer
+          funds, make payments, monitor transactions, and access other financial
+          products. Certain services may be subject to additional terms, eligibility
+          requirements, or regulatory approvals.
         </p>
 
         {/* 5 */}
-        <h2>5. Client Responsibilities</h2>
+        <h2>5. Customer Responsibilities</h2>
         <ul>
-          <li>Provide accurate and timely employee, hours, and remuneration data.</li>
-          <li>Notify us promptly of any changes affecting payroll.</li>
-          <li>Maintain ultimate responsibility for tax filings and statutory obligations.</li>
+          <li>Provide accurate and up-to-date personal information during registration.</li>
+          <li>Keep your login credentials, PINs, passwords, and verification codes confidential.</li>
+          <li>Immediately report any unauthorized account access or suspicious activity.</li>
+          <li>Ensure sufficient funds are available before initiating payments or transfers.</li>
+          <li>Comply with all applicable financial laws and regulations.</li>
         </ul>
 
         {/* 6 */}
         <h2>6. Intellectual Property</h2>
         <p>
-         All content on this website — including text, graphics, logos, and software — is the property of Cedar Capital Payroll or its licensors and is protected by applicable copyright and trademark laws. You may not reproduce or redistribute any content without prior written consent.
+          All content within the SecureBank application, including text, graphics,
+          logos, software, and trademarks, is the property of SecureBank or its
+          licensors and is protected by applicable intellectual property laws.
+          Unauthorized reproduction, modification, or distribution is prohibited.
         </p>
 
         {/* 7 */}
         <h2>7. Limitation of Liability</h2>
         <p>
-          To the fullest extent permitted by law, Cedar Capital Payroll shall not be liable for any indirect, incidental, or consequential losses arising from your use of this website. Nothing in these Terms excludes liability that cannot be limited by law.
+          To the maximum extent permitted by law, SecureBank shall not be liable for
+          indirect, incidental, consequential, or special damages arising from your
+          use of the application or banking services, except where liability cannot
+          legally be excluded.
         </p>
 
         {/* 8 */}
-        <h2>8. Confidentiality</h2>
+        <h2>8. Security & Confidentiality</h2>
         <p>
-          We treat all client and employee data as strictly confidential and handle it in accordance with our Privacy Policy and applicable data-protection legislation.
+          We implement industry-standard security measures to protect your financial
+          and personal information. Customers are responsible for maintaining the
+          confidentiality of their account credentials and promptly notifying us of
+          any suspected security breaches.
         </p>
 
         {/* 9 */}
         <h2>9. Changes to These Terms</h2>
         <p>
-          We may update these Terms periodically. The latest version will always be published on this page with the revision date.
+          We may update these Terms from time to time to reflect changes in our
+          services, technology, or legal requirements. The latest version will
+          always be available within the application and on our website.
         </p>
 
+        {/* 10 */}
         <h2>10. Governing Law</h2>
         <p>
-         These Terms are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the English courts.
+          These Terms are governed by the laws of the jurisdiction in which
+          SecureBank is licensed to operate. Any disputes arising from these Terms
+          shall be subject to the exclusive jurisdiction of the appropriate courts.
         </p>
-        <h2>11. Contact</h2>
 
+        {/* 11 */}
+        <h2>11. Contact</h2>
         <p>
-         For any questions about these Terms, please contact us at 
-          <span className="highlight">Support@cedarpayroll.com</span> or{" "}
-          <span className="highlight">+971 50 429 4194</span>.
+          If you have any questions regarding these Terms & Conditions, please
+          contact us at{" "}
+          <span className="highlight">info@cedarcapitalbank.com</span> or{" "}
+          <span className="highlight">+44 741 281 8641</span>.
         </p>
 
       </div>
