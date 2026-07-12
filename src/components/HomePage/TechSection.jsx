@@ -32,15 +32,15 @@ export default function TechSection() {
 
       {/* LEFT */}
       <div className="left">
-        <span className="tag">KEY PLATFORM CAPABILITIES</span>
+        <span className="tag subheading">KEY PLATFORM CAPABILITIES</span>
 
         <h2>
           Technology <br />
-          built to <span>scale.</span>
+          built to <span className="yellow-text">scale.</span>
         </h2>
 
         <p>
-          Everything you need to run and scale a modern digital bank —
+          Everything you need to run and scale a modern digital bank
           on one unified platform.
         </p>
 

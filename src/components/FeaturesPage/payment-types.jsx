@@ -7,14 +7,14 @@ export default function PaymentTypes() {
 
       {/* HEADER */}
       <div className="payment-header">
-        <span className="tag">PAYMENT TYPES</span>
+        <span className="tag subheading">PAYMENT TYPES</span>
 
         <h2>
-          Two ways to send. <span>Both transparent.</span>
+          Two ways to send. <span className="yellow-text">Both transparent.</span>
         </h2>
 
         <p>
-          Choose the rail that fits the payment — we'll always show the fee,
+          Choose the rail that fits the payment; we'll always show the fee,
           the rate and the expected arrival time before you confirm.
         </p>
       </div>

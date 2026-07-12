@@ -11,7 +11,7 @@ export default function AboutStatsSection() {
         <div className="about-left">
 
           <p>
-            We didn't start as a traditional software vendor — the platform was shaped
+            We didn't start as a traditional software vendor; the platform was shaped
             through real-world financial operations, designed to handle complex banking
             workflows, high-volume transactions, and regulatory requirements from day one.
           </p>
@@ -25,7 +25,7 @@ export default function AboutStatsSection() {
           <p>
             Our teams span engineering, financial systems, compliance, and product design,
             working across major global hubs including London, Dubai, and Singapore. Every
-            layer of the platform is built with precision — from transaction processing and
+            layer of the platform is built with precision from transaction processing and
             reconciliation to security, uptime, and regulatory alignment.
           </p>
 

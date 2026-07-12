@@ -7,11 +7,11 @@ export default function AboutHero() {
       <div className="hero-content">
 
         {/* TOP TAG */}
-        <span className="platform-hero-tag">About Us</span>
+        <span className="platform-hero-tag subheading">About Us</span>
 
         {/* HEADING */}
         <h1 className="hero-title">
-          Engineering the Next Generation of  <span>Banking Infrastructure</span> 
+          Engineering the Next Generation of  <span className="yellow-text">Banking Infrastructure</span> 
         </h1>
 
         {/* TEXT */}

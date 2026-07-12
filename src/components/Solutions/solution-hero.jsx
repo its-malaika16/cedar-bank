@@ -7,11 +7,11 @@ export default function SolutionHero() {
       <div className="hero-content">
 
         {/* TOP TAG */}
-        <span className="platform-hero-tag">SOLUTIONS</span>
+        <span className="platform-hero-tag subheading">SOLUTIONS</span>
 
         {/* HEADING */}
         <h1 className="hero-title">
-          Banking Infrastructure for <span>Every Scale</span> 
+          Banking Infrastructure for <span className="yellow-text">Every Scale</span> 
         </h1>
 
         {/* TEXT */}

@@ -7,11 +7,11 @@ export default function ContactHero() {
       <div className="hero-content">
 
         {/* TOP TAG */}
-        <span className="platform-hero-tag">Contact us</span>
+        <span className="platform-hero-tag subheading">Contact us</span>
 
         {/* HEADING */}
         <h1 className="hero-title">
-          Want to know more about  <span>Cedar Capital?</span> 
+          Want to know more about  <span className="yellow-text">Cedar Capital?</span> 
         </h1>
 
         {/* TEXT */}

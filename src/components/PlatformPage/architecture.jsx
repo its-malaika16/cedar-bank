@@ -6,10 +6,10 @@ export default function ArchitectureSection() {
 <div className="container">
       {/* HEADER */}
       <div className="architecture-header">
-        <span className="tag">ARCHITECTURE</span>
+        <span className="tag subheading">ARCHITECTURE</span>
 
         <h2>
-          Built for Modern <span>Financial Infrastructure</span>
+          Built for Modern <span className="yellow-text">Financial Infrastructure</span>
         </h2>
 
         <p>

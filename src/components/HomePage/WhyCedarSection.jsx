@@ -6,16 +6,16 @@ export default function WhyCedarSection() {
 
       {/* HEADER */}
       <div className="why-header">
-        <div className="why-tag">
+        <div className="why-tag subheading">
           WHY CEDAR CAPITAL BANK
         </div>
 
         <h2>
-          The Future of <span className="gold">Digital Banking</span> Starts Here
+          The Future of <span className="gold yellow-text" >Digital Banking</span> Starts Here
         </h2>
 
         <p>
-          A pre-integrated banking platform built by bankers, for bankers — and the global teams they serve.
+          Empowering global businesses with secure, modern banking solutions.
         </p>
       </div>
 

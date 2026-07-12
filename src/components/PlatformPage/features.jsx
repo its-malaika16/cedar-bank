@@ -6,10 +6,10 @@ export default function FeaturesSection() {
       <div className="container">
         {/* HEADER */}
         <div className="features-header">
-          <span className="tag">FEATURES</span>
+          <span className="tag subheading">FEATURES</span>
 
           <h2>
-            Enterprise Banking <span>Features</span>
+            Enterprise Banking <span className="yellow-text">Features</span>
           </h2>
         </div>
 

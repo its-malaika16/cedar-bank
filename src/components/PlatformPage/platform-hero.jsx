@@ -8,10 +8,10 @@ export default function PlatformHero() {
         {/* ✅ LEFT CONTENT */}
         <div className="hero-content">
 
-          <span className="platform-hero-tag">PLATFORM</span>
+          <span className="platform-hero-tag subheading">PLATFORM</span>
 
           <h1 className="hero-title">
-            A Unified <span>Banking</span> Operating System
+            A Unified <span className="yellow-text">Banking</span> Operating System
           </h1>
 
           <p className="hero-desc">

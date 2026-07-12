@@ -156,9 +156,9 @@ export default function Capabilities() {
     <section className="banking-section">
 
       <div className="banking-header">
-        <span className="banking-tag">CAPABILITIES</span>
+        <span className="banking-tag subheading">CAPABILITIES</span>
         <h2 className="banking-title">
-          One platform, <span className="title-highlight">Unlimited Banking Possibilities</span>
+          One platform, <span className="title-highlight yellow-text">Unlimited Banking Possibilities</span>
         </h2>
       </div>
 

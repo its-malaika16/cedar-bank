@@ -23,7 +23,7 @@ export default function StorySection() {
             <p>
               With decades of experience in financial infrastructure and payroll
               management, we built a system designed to remove friction from
-              global finance — combining deep expertise with modern technology.
+              global finance combining deep expertise with modern technology.
             </p>
 
             <p>

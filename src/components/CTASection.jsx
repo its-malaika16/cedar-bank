@@ -10,7 +10,7 @@ export default function CtaSection() {
         {/* TITLE */}
         <h2>
           Ready to Build the{" "}
-          <span>Future of Banking?</span>
+          <span className="yellow-text">Future of Banking?</span>
         </h2>
 
         {/* SUBTEXT */}

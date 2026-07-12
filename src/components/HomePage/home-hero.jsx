@@ -17,7 +17,7 @@ export default function Hero() {
 
         <h1>
           Banking <br />
-          <span className="gold">Infrastructure</span> Built <br />
+          <span className="gold yellow-text">Infrastructure</span> Built <br />
           for Global Business
         </h1>
 

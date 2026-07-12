@@ -8,11 +8,11 @@ export default function FeatureHero() {
       <div className="hero-content">
 
         {/* TOP TAG */}
-        <span className="platform-hero-tag">APP FEATURES</span>
+        <span className="platform-hero-tag subheading">APP FEATURES</span>
 
         {/* HEADING */}
         <h1 className="hero-title">
-          All-in-One <span>Financial</span> Control
+          All-in-One <span className="yellow-text">Financial</span> Control
         </h1>
 
         {/* TEXT */}

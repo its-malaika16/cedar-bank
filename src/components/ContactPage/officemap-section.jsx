@@ -34,9 +34,9 @@ export default function OfficesSection() {
 
       {/* HEADER */}
       <div className="header">
-        <span>OUR OFFICES</span>
+        <span className="subheading">OUR OFFICES</span>
         <h2>
-          Find us <span className="gold">around the world.</span>
+          Find us <span className="gold yellow-text">around the world.</span>
         </h2>
       </div>
 
