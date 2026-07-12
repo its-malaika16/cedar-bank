@@ -13,7 +13,6 @@ import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 
-
 function App() {
   return (
     <Router>
@@ -27,6 +26,7 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/platform" element={<Platform />} />
         <Route path="/solutions" element={<Solutions />} />
+       
 
       </Routes>
       {<Footer />}

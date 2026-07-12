@@ -1,136 +1,237 @@
 .story-section {
   padding: 120px 6%;
   background: linear-gradient(135deg, #0b2f2a, #071912);
+  overflow: hidden;
 }
 
-/* ✅ CONTAINER */
+/* CONTAINER */
 .story-container {
+  max-width: 1400px;
+  margin: 0 auto;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
   gap: 80px;
 }
 
-/* ✅ LEFT */
+/* LEFT SIDE */
 .story-left {
-  width: 55%;
+  flex: 1;
+  max-width: 720px;
 }
 
 .tag {
+  display: inline-block;
   font-size: 12px;
   letter-spacing: 3px;
+  font-weight: 600;
   color: #d4af37;
 }
 
 .story-left h2 {
-  font-size: 60px;
+  margin: 20px 0 24px;
+
   font-family: Georgia, serif;
-  margin: 20px 0;
-  line-height: 1.2;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 1.15;
+
   color: #e5e7eb;
 }
 
-.story-left span {
+.story-left h2 span {
   color: #d4af37;
   font-style: italic;
 }
 
 .story-left p {
   color: #cbd5e0;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.9;
   margin-bottom: 20px;
-  font-size: 15px;
 }
 
-/* ✅ RIGHT */
+/* RIGHT SIDE */
 .story-right {
-  width: 40%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-/* ✅ CARD */
+/* CARD */
 .founder-card {
-  border-radius: 20px;
-  padding: 50px 30px;
+  width: 100%;
+  /* flex: 2; */
+  max-width: 430px;
 
-  border: 1px solid rgba(212,175,55,0.2);
-  background: rgba(0,0,0,0.25);
-
-  backdrop-filter: blur(10px);
-
+  padding: 40px 40px;
   text-align: center;
 
-  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.04);
 
-  /* animation */
-  opacity: 0;
-  transform: translateY(40px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 24px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  isolation: isolate;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+
   animation: fadeUp 0.8s ease forwards;
 }
 
-/* ✅ IMAGE */
+/* IMAGE WRAPPER */
 .avatar {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
+
+  margin: 0 auto 24px;
+
   border-radius: 50%;
   overflow: hidden;
 
-  margin: 0 auto 20px;
+  border: 2px solid rgba(212, 175, 55, 0.4);
 
-  border: 1px solid rgba(212,175,55,0.4);
+  position: relative;
 }
 
+/* CRISP IMAGE FIX */
 .avatar img {
+  display: block;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
+  object-position: center;
+
+  transform: translateZ(0);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  image-rendering: auto;
+
+  will-change: transform;
 }
 
-/* ✅ TEXT */
+/* TEXT */
 .founder-card h3 {
   color: #e5e7eb;
-  font-size: 20px;
-  margin-bottom: 6px;
+  font-size: 22px;
+  margin-bottom: 8px;
 }
 
 .role {
   color: #d4af37;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-/* ✅ HOVER */
+/* HOVER */
 .founder-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(212,175,55,0.6);
-  box-shadow: 0 10px 40px rgba(212,175,55,0.15);
+
+  border-color: rgba(212, 175, 55, 0.6);
+
+  box-shadow:
+    0 20px 60px rgba(212, 175, 55, 0.12);
 }
 
-/* ✅ ANIMATION */
+/* ANIMATION */
 @keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* ✅ RESPONSIVE */
+/* LARGE TABLETS */
 @media (max-width: 1024px) {
+  .story-section {
+    padding: 90px 5%;
+  }
+
   .story-container {
     flex-direction: column;
+    text-align: center;
+    gap: 60px;
   }
 
   .story-left,
   .story-right {
     width: 100%;
+    max-width: 100%;
   }
 }
 
+/* TABLETS */
 @media (max-width: 768px) {
+  .story-section {
+    padding: 70px 24px;
+  }
+
   .story-left h2 {
-    font-size: 36px;
+    font-size: 40px;
+  }
+
+  .founder-card {
+    padding: 40px 24px;
+  }
+
+  .avatar {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* MOBILES */
+@media (max-width: 480px) {
+  .story-section {
+    padding: 60px 20px;
+  }
+
+  .story-left h2 {
+    font-size: 32px;
+  }
+
+  .story-left p {
+    font-size: 15px;
   }
 
   .avatar {
     width: 180px;
     height: 180px;
+  }
+
+  .founder-card h3 {
+    font-size: 20px;
+  }
+
+  .role {
+    font-size: 14px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 360px) {
+  .avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .story-left h2 {
+    font-size: 28px;
   }
 }
