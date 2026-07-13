@@ -8,10 +8,10 @@ export default function StorySection() {
 
           {/* LEFT CONTENT */}
           <div className="story-left">
-            <span className="tag">OUR STORY</span>
+            <span className="tag subheading">OUR STORY</span>
 
             <h2>
-              Built on trust, <span>driven by precision.</span>
+              Built on trust, <span className="yellow-text">driven by precision.</span>
             </h2>
 
             <p>
