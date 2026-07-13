@@ -32,7 +32,7 @@ body,
 
 /* Global Font */
 * {
-  font-family: "Mont", sans-serif;
+  font-family: "Mont", sans-serif !important;
 }
 
 /* Body Text */
