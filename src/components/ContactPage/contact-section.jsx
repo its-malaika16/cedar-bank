@@ -127,6 +127,8 @@ export default function ContactSection() {
 
             <form className="form">
 
+             <form onSubmit={handleSubmit}></form>
+
               <div className="row">
                 <input
                   type="text"
