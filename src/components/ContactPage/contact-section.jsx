@@ -125,9 +125,9 @@ export default function ContactSection() {
           {/* ✅ RIGHT SIDE FORM */}
           <div className="contact-right">
 
-            <form className="form">
+            <form className="form" onSubmit={handleSubmit}>
 
-             <form onSubmit={handleSubmit}></form>
+            
 
               <div className="row">
                 <input
