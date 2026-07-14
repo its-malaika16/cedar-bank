@@ -65,7 +65,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Insert into database
-$sql = "INSERT INTO Bank
+$sql = "INSERT INTO CBank
 (firstname, lastname, email, company, field, location, description)
 VALUES (?, ?, ?, ?, ?, ?, ?)";
 
