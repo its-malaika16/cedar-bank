@@ -113,7 +113,7 @@ try {
     $stmt->execute();
 
     // Email notification
-    $to = "info@cedarpayroll.com";
+    $to = "support@cedarpayroll.com";
     $subject = "New Cedar Bank Enquiry";
 
     $message = "
